@@ -1,6 +1,6 @@
 # TO-DO: Complete the selection_sort() function below
 
-n = [2, 4, 1, 5, 3, 6, 8, 7]
+list = [2, 4, 1, 5, 3, 6, 8, 7]
 
 
 def selection_sort(arr):
@@ -25,9 +25,9 @@ def selection_sort(arr):
                 # print(f"[{arr[smallest_index]}, {arr[j]}]")
                 smallest_index = j
 
-            # b. Swap the element at current index with the
-            # smallest element found in above loop
-            # Swap variables without using temp variable > x,y = y,x
+        # b. Swap the element at current index with the
+        # smallest element found in above loop
+        # Swap variables without using temp variable > x,y = y,x
         arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[cur_index]
 
         # TO-DO: swap
@@ -35,7 +35,7 @@ def selection_sort(arr):
     return arr
 
 
-print(selection_sort(n))
+print(selection_sort(list))
 
 # TO-DO:  implement the Bubble Sort function below
 
