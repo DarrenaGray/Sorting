@@ -35,17 +35,37 @@ def selection_sort(arr):
     return arr
 
 
-print(selection_sort(list))
+# print(selection_sort(list))
 
 # TO-DO:  implement the Bubble Sort function below
 
+list_two = [3, 4, 9, 5, 2, 7, 1, 0]
+
 
 def bubble_sort(arr):
+    # Loop over the list
+    has_swapped = True
+    while has_swapped:
+        has_swapped = False
+        for i in range(0, len(arr)-1):
+            # print(i)
+            # Compare each element to its neighbor
+            if arr[i] > arr[i + 1]:
+                arr[i], arr[i + 1] = arr[i+1], arr[i]
+                has_swapped = True
+
+        # If elements in wrong position (relative to each other, swap them)
+        # If no swaps performed, stop.
+    # Else, go back to the element at index 0 and repeat step 1
 
     return arr
 
 
+print(bubble_sort(list_two))
+
 # STRETCH: implement the Count Sort function below
+
+
 def count_sort(arr, maximum=-1):
 
     return arr
